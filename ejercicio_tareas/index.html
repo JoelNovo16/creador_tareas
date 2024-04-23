@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Tareas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Generador de Tarea</h1>
+        <p class="header__description">¡Crea tu tarea personalizada!</p>
+    </header>
+    <div id="container">
+        <form class="formulario">
+            <div class="grupo">
+                <label for="nombre"><strong>Nombre de la tarea:</strong></label>
+                <input type="text" id="nombre_tarea" >
+            </div>
+            <div class="grupo">
+                <label for="descripcion"><strong>Descripción:</strong></label>
+                <textarea id="descripcion"></textarea>
+            </div>
+            <div class="grupo">
+                <label for="fecha"><strong>Fecha límite:</strong></label>
+                <input type="date" id="fecha">
+            </div>
+        </form>
+        <button type="submit" id="crear_tarea">Crear Tarea</button>
+    </div>
+    <div id="tareas_container"></div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+

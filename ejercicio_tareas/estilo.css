@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(regreso-escuela-esquema-patron-garabato-diferentes-utiles-escolares-herramientas-fondo-pluma-lapiz-libro-bola-globo-triangulo-mochila-quimica-matraces-regla-calculador.jpg);
+}
+
+.header {
+    text-align: center;
+    background-color: rgb(222, 170, 0);
+    padding: 10px;
+}
+
+.header__title {
+    font-size: 2.5em;
+    color: #333;
+    margin-top: 0px;
+}
+
+.header__description {
+    font-size: 1.2em;
+    color: #666;
+}
+
+#container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 9px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.formulario {
+    display: grid;
+    gap: 50px;
+}
+
+.grupo {
+    display: grid;
+    gap: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+#crear_tarea {
+    padding: 10px 25px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 75%;
+    margin-top: 40px;
+    
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#tareas_container {
+    width: 60%;
+    margin: 30px auto;
+    text-align: left;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+/* Estilos para los botones de las tareas */
+.botones-tarea {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.estado_tarea,
+.borrar_tarea {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+.tarea {
+    padding-bottom: 5px;
+    align-items: center;
+}
+
+.tarea.hecho {
+    background-color:#28a745;
+}
+
+.tarea.no-hecho {
+    background-color: #f20000;
+}
